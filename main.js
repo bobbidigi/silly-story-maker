@@ -14,7 +14,7 @@ function randomValueFromArray(array){
   return array[random];
 }
  
-var storyText = 'It was 94 farenheit outside, so :insertx:  went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+var storyText = 'It was 94 farenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but he was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
 var insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
 var insertY = ['the soup kitchen','Disneyland','the White House'];
 var insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
@@ -27,12 +27,12 @@ function result() {
   var yItem = randomValueFromArray(insertY);
   var zItem = randomValueFromArray(insertZ);
  
-  newStory = newStory.replace(':insertx:',xItem); 
+//  newStory = newStory.replace(':insertx:',xItem); 
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
 	
-	//X images
+//X images
 	if(xItem == 'Willy the Goblin'){
   xImage.setAttribute ('src','http://www.boardgamegoblin.com/Goblin-1.JPG');
 	}else if(xItem == 'Big Daddy'){
@@ -41,7 +41,7 @@ function result() {
   xImage.setAttribute ('src','https://cdn2.newsok.biz/cache/r960-799265e8038f1d9e4a53682251fd4087.jpg');
 	}
 	
-	//Y images
+//Y images
 	if(yItem == 'the soup kitchen'){
   yImage.setAttribute ('src','http://s2.quickmeme.com/img/ea/ea272215b3167e83b12f3ddf092518da28a2c6e61ff79ed8b6623958afef28be.jpg');
 	}else if(yItem == 'Disneyland'){
